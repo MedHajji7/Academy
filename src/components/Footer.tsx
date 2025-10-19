@@ -13,8 +13,8 @@ export default function Footer() {
                 <GraduationCap className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-primary">الأكاديمية الدولية</h3>
-                <p className="text-sm text-gray-500">AMJD-PRO</p>
+                <h3 className="text-xl font-bold text-primary">  الأكاديمية </h3>
+                <p className="text-sm text-gray-500">Academy-Name</p>
               </div>
             </div>
             <p className="text-gray-500 leading-relaxed">
@@ -65,7 +65,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-500">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                <span>شارع الجيش الملكي، إقامة كوروكو، الطابق الثالث، الناظور</span>
+                <span>Localisation</span>
               </li>
               <li className="flex items-center gap-3 text-gray-500">
                 <Phone className="w-5 h-5 text-primary/70 flex-shrink-0" />
@@ -73,7 +73,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-gray-500">
                 <Mail className="w-5 h-5 text-primary/50 flex-shrink-0" />
-                <span>info@centreamjd.com</span>
+                <span>info@email.com</span>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ export default function Footer() {
         <div className="border-t border-primary/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-center md:text-right">
-              جميع الحقوق محفوظة © {currentYear} الأكاديمية الدولية AMJD-PRO
+              جميع الحقوق محفوظة © {currentYear} الأكاديمية  
             </p>
             <div className="flex gap-6 text-gray-400 text-sm">
               <a href="#" className="hover:text-primary transition-colors">سياسة الخصوصية</a>

@@ -4,7 +4,7 @@ import { itemVariants, containerVariants } from './motionVariants';
 
 export default function Hero() {
   return (
-  <section id="home" className="pt-32 pb-20 px-4 overflow-hidden bg-lightbg">
+  <section id="home" className="pt-24 pb-20 px-4 overflow-hidden bg-lightbg">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-right">

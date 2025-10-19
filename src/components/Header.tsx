@@ -31,7 +31,7 @@ export default function Header({ scrolled }: HeaderProps) {
       {showBanner && (
         <div className="w-full bg-amber-400 text-amber-900 text-center py-2 px-4">
           <div className="container mx-auto flex items-center justify-center gap-4">
-            <p className="text-sm font-semibold">يسرنا إعلامكم بحصول الأكاديمية الدولية أمجاد برو على اعتماد البورد الألماني للتدريب والاستشارات</p>
+            <p className="text-sm font-semibold">يسرنا إعلامكم بحصول الأكاديمية</p>
             <button
               aria-label="Close banner"
               onClick={() => setShowBanner(false)}
@@ -42,21 +42,21 @@ export default function Header({ scrolled }: HeaderProps) {
           </div>
         </div>
       )}
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between py-2">
           <div className="flex items-center gap-3 animate-fade-in">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300">
-              <GraduationCap className="w-7 h-7 text-white" />
+            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-md transform hover:scale-105 transition-transform duration-300">
+              <GraduationCap className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-primary">
+              <h1 className="text-lg font-bold text-primary">
                 الأكاديمية الدولية
               </h1>
-              <p className="text-xs text-gray-600">AMJD-PRO</p>
+              <p className="text-[11px] text-gray-600">Academy-Name</p>
             </div>
           </div>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link, index) => (
               <motion.a
                 key={link.name}
@@ -75,7 +75,7 @@ export default function Header({ scrolled }: HeaderProps) {
           </nav>
 
           <motion.button
-            className="hidden md:block px-6 py-3 bg-primary text-white rounded-full font-semibold shadow-lg transform transition-all duration-300"
+            className="hidden md:block px-4 py-2 bg-primary text-white rounded-full font-semibold shadow-md transform transition-all duration-300 text-sm"
             style={{ animation: 'slideDown 0.5s ease-out 0.5s both' }}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
@@ -94,6 +94,14 @@ export default function Header({ scrolled }: HeaderProps) {
             )}
           </button>
         </div>
+
+        {/* subtle separator under the header to visually separate it from page content */}
+        <div
+          aria-hidden
+          className={`h-px w-full mt-2 transition-colors duration-300 ${
+            scrolled ? 'bg-gray-200' : 'bg-transparent'
+          }`}
+        />
 
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 animate-fade-in">

@@ -31,7 +31,7 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold text-gray-800 mb-1">العنوان</p>
                     <p className="text-gray-600">
-                      شارع الجيش الملكي، إقامة كوروكو، الطابق الثالث
+                      شارع ........................
                       <br />
                       الناظور، المغرب
                     </p>
@@ -55,8 +55,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800 mb-1">البريد الإلكتروني</p>
-                    <p className="text-gray-600">info@centreamjd.com</p>
-                    <p className="text-gray-600">contact@centreamjd.com</p>
+                    <p className="text-gray-600">info@email.com</p>
+                    <p className="text-gray-600">contact@email.com</p>
                   </div>
                 </div>
               </div>

@@ -1,10 +1,15 @@
 import { Clock, Users, Award, ChevronLeft } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { itemVariants, containerVariants } from './motionVariants';
 import { courses } from '../data/courses';
 
 export default function Courses() {
+
+  const [showAll, setShowAll] = useState(false);
+
+  const displayedCourses = showAll ? courses : courses.slice(0, 3);
 
   return (
   <section id="courses" className="py-20 px-4 bg-lightbg">
@@ -22,7 +27,7 @@ export default function Courses() {
         </div>
 
         <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" animate="visible">
-          {courses.map((course) => (
+          {displayedCourses.map((course) => (
             <motion.div key={course.id} variants={itemVariants} whileHover={{ y: -8, scale: 1.02 }} whileTap={{ scale: 0.995 }} className="group bg-white rounded-3xl overflow-hidden shadow-lg transition-all duration-500">
               <div className="relative overflow-hidden h-56">
                 <motion.img
@@ -80,8 +85,12 @@ export default function Courses() {
         </motion.div>
 
         <div className="text-center mt-12 animate-fade-in">
-          <button className="px-10 py-4 bg-primary text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-            عرض جميع الدورات
+          <button
+            onClick={() => setShowAll((s) => !s)}
+            aria-expanded={showAll}
+            className="px-10 py-4 bg-primary text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+          >
+            {showAll ? 'إظهار أقل' : 'عرض جميع الدورات'}
           </button>
         </div>
       </div>

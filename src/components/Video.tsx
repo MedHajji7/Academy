@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function Video() {
   // Place your MP4 in the project's public folder as /video.mp4
   // Example: public/video.mp4 -> referenced below as "/video.mp4"
-  const videoSrc = '/video.mp4';
+  const videoSrc = '/videos.mp4';
   const [playing, setPlaying] = useState(false);
 
   return (
@@ -50,9 +50,9 @@ export default function Video() {
             )}
 
             {!playing && (
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-white/80">
+              <div className="absolute bottom-0 left-0 right-0 p-3 bg-white/80">
                 <h3 className="text-primary text-2xl font-bold mb-2">
-                  جولة داخل الأكاديمية الدولية AMJD-PRO
+                  جولة داخل الأكاديمية
                 </h3>
                 <p className="text-gray-700">
                   اكتشف مرافقنا الحديثة وتعرف على منهجيتنا في التدريب والتكوين

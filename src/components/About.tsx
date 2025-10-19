@@ -32,7 +32,7 @@ export default function About() {
             من نحن
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            الأكاديمية الدولية <span className="text-primary">AMJD-PRO</span>
+            الأكاديمية <span className="text-primary">Academy-Name</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             مؤسسة تعليمية رائدة متخصصة في التكوين والتدريب المهني المستمر. نحن نعتمد أرقى المعايير الدولية في التدريب والاستشارات
@@ -65,7 +65,7 @@ export default function About() {
 
         <div className="bg-white rounded-3xl p-12 text-gray-900 text-center shadow-2xl animate-fade-in border border-primary/10">
           <h3 className="text-3xl md:text-4xl font-bold mb-6">
-            لماذا تختار الأكاديمية الدولية؟
+            لماذا تختار الأكاديمية؟
           </h3>
           <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
             نحن نقدم تجربة تعليمية فريدة تجمع بين الخبرة الأكاديمية العالية والتطبيق العملي، مع شهادات معترف بها دولياً من أفضل المؤسسات التعليمية
