@@ -3,8 +3,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Video() {
-  // Place your MP4 in the project's public folder as /video.mp4
-  // Example: public/video.mp4 -> referenced below as "/video.mp4"
   const videoSrc = '/videos.mp4';
   const [playing, setPlaying] = useState(false);
 
