@@ -23,7 +23,7 @@ export default function Video() {
             {!playing ? (
               <div className="aspect-video bg-white flex items-center justify-center relative">
                 <img
-                  src="https://images.pexels.com/photos/5212320/pexels-photo-5212320.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="https://plus.unsplash.com/premium_photo-1683887033886-6c45d4b659f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QWNhZGVteXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                   alt="الأكاديمية"
                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                 />
